@@ -14,6 +14,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {"status": "App is running"}
+
 @app.post("/match_bulk")
 async def match_multiple_resumes(
     jd_text: str = Form(...),

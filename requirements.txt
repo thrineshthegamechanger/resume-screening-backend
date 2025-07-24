@@ -1,6 +1,6 @@
 fastapi
 gunicorn
-uvicorn
+uvicorn[standard]
 python-multipart
 pdfminer.six
 scikit-learn
